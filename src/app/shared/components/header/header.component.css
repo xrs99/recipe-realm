@@ -1,0 +1,9 @@
+.mat-toolbar.mat-primary {
+  background: #bbdef0;
+  color: #fff;
+  position: fixed;
+}
+
+.navbar-spacer {
+  flex: 1 1 auto;
+}
