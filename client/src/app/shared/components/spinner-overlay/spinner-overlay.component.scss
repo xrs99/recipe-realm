@@ -1,0 +1,19 @@
+@import 'src/styles.scss';
+
+:host {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  place-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  display: flex;
+  z-index: 0;
+}
+
+.hide-button {
+  font-weight: 500;
+  cursor: pointer;
+}

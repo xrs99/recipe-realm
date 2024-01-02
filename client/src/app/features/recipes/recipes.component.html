@@ -1,2 +1,7 @@
-<p>recipes works!</p>
-<div *ngFor="let recipe of recipes"><p>{{recipe.name}}</p></div>
+<div>
+    <mat-grid-list cols="3" rowHeight="600">
+        <mat-grid-tile *ngFor="let recipe of recipes;">
+            <app-card [recipeName]="recipe.name" [recipeDescription]="recipe.description" (favorite)="favoriteRecipe(recipe.id)"></app-card>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>

@@ -1,0 +1,18 @@
+<mat-card class="card">
+    <mat-card-header>
+      <mat-card-title>{{recipeName}}</mat-card-title>
+      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="../../../../assets/food-background.jpg" alt="Photo of food">
+    <mat-card-content>
+      <p>
+        {{recipeDescription}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button (click)="handleClick($event)" mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+  

@@ -1,7 +1,8 @@
 .mat-toolbar.mat-primary {
   background: #bbdef0;
   color: #fff;
-  position: fixed;
+  z-index: 0;
+  top: 0;
 }
 
 .navbar-spacer {

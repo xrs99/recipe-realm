@@ -1,0 +1,5 @@
+<mat-spinner diameter="156" strokeWidth="6" mode="indeterminate"></mat-spinner>
+<span class="hide-button color-primary" *ngIf="showHideButton" (click)="forceHide()">Hide</span>
+
+<!-- When hide button is not displayed, use space to keep spinner in same position. -->
+<span *ngIf="!showHideButton">&nbsp;</span>

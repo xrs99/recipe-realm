@@ -2,23 +2,9 @@
 <app-header></app-header>
 
 <!-- body -->
-<div>
-  <div class="landing-search-field">
-    <div class="wrap">
-      <div class="search">
-        <input type="text" class="searchTerm" placeholder="What are you looking for?">
-          <button mat-button type="submit" class="searchButton" (click)="getRecipies()">
-            <i class="fa fa-search"></i>
-          </button>
-        </div>
-      </div>
-  </div>
-
-  <div class="landing-display">
-
-  </div>
+<div style="min-height: 100%;">
+  <router-outlet ></router-outlet>
 </div>
-<router-outlet></router-outlet>
 
 <!-- footer -->
 <app-footer></app-footer>
