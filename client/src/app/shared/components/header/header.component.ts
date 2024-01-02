@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  isMenuExpanded: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  public openProfile(){
+    console.log('profile')
+  }
+
 
 }

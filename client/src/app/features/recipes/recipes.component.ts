@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { RecipeService } from 'src/app/shared/services/recipe.service';
 import { Recipe } from 'src/app/shared/types/recipe';
 
 @Component({
@@ -9,7 +10,7 @@ import { Recipe } from 'src/app/shared/types/recipe';
 })
 export class RecipesComponent implements OnInit {
   recipes: Recipe[] = []
-  constructor(public route: ActivatedRoute) {
+  constructor(public route: ActivatedRoute, private recipeService: RecipeService) {
     this.route.data.subscribe(data => this.recipes = data['recipes'])
   }
 

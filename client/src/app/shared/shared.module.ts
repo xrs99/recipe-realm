@@ -7,6 +7,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { CardComponent } from './components/card/card.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from '../app-routing.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { MatCardModule } from '@angular/material/card';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    RouterModule,
+    AppRoutingModule
   ],
   exports: [
     HeaderComponent,

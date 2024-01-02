@@ -14,6 +14,9 @@ import { SharedModule } from './shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { RecipesModule } from './features/recipes/recipes.module';
+import { ListsModule } from './features/lists/lists.module';
+import { FavoritesModule } from './features/favorites/favorites.module';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -31,7 +34,10 @@ import { RecipesModule } from './features/recipes/recipes.module';
     MatButtonModule,
     SharedModule,
     HttpClientModule,
-    RecipesModule
+    RecipesModule,
+    ListsModule,
+    FavoritesModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

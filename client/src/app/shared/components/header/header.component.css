@@ -1,10 +1,24 @@
-.mat-toolbar.mat-primary {
-  background: #bbdef0;
-  color: #fff;
-  z-index: 0;
-  top: 0;
+.mat-toolbar {
+  height: 64px;
+}
+
+.menu-icon,
+.favorite-icon {
+  color: white;
+}
+
+.app-title {
+  font-size: 1.5em;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.my-favorites-button,
+.my-lists-button {
+  color: white;
+  margin-left: 10px;
 }
 
 .navbar-spacer {
-  flex: 1 1 auto;
+  flex: 1;
 }
